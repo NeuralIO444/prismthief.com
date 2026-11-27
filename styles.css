@@ -1,0 +1,231 @@
+:root {
+  --bg: #0c0c0c;
+  --panel: #121212;
+  --panel-2: #161616;
+  --line: #262626;
+  --text: #f2f2f2;
+  --muted: #9a9a9a;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--text); }
+
+.site-head {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 22px;
+  background: rgba(12, 12, 12, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+
+.wordmark {
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.site-head nav a {
+  color: var(--muted);
+  text-decoration: none;
+  margin-left: 18px;
+  font-size: 14px;
+}
+
+.site-head nav a:hover { color: var(--text); }
+
+.hero { position: relative; }
+
+.hero-img {
+  width: 100%;
+  height: min(78vh, 640px);
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.72);
+}
+
+.hero-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 34px 22px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.82));
+}
+
+.hero-text h1 {
+  font-size: clamp(38px, 8vw, 84px);
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  line-height: 1.02;
+}
+
+.tagline {
+  margin-top: 12px;
+  font-size: clamp(15px, 2.4vw, 19px);
+  color: #e6e6e6;
+}
+
+.section {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 64px 22px 8px;
+}
+
+.section h2 {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.section-note { color: var(--muted); max-width: 560px; margin-bottom: 26px; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 14px;
+}
+
+.grid figure {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  overflow: hidden;
+  cursor: zoom-in;
+}
+
+.grid img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.grid figure:hover img { transform: scale(1.03); }
+
+.grid figcaption {
+  padding: 10px 12px;
+  font-size: 13px;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+}
+
+.about p { max-width: 640px; margin-bottom: 16px; color: #dedede; }
+
+.about-avatar {
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  margin-bottom: 18px;
+}
+
+.about blockquote {
+  max-width: 640px;
+  margin-top: 26px;
+  padding: 18px 20px;
+  background: var(--panel);
+  border-left: 3px solid var(--text);
+  color: #dedede;
+  font-style: italic;
+}
+
+.shows { list-style: none; }
+
+.shows li {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 13px 2px;
+  border-bottom: 1px solid var(--line);
+  flex-wrap: wrap;
+}
+
+.show-name { font-weight: 600; }
+.show-detail { color: var(--muted); font-size: 14px; }
+
+.zine p { color: #dedede; }
+.zine a { font-weight: 600; }
+
+.link-list { display: grid; gap: 10px; max-width: 560px; }
+
+.link-list a {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 14px;
+  padding: 14px 16px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.link-list a:hover { background: var(--panel-2); }
+.link-list small { color: var(--muted); }
+
+footer {
+  max-width: 1080px;
+  margin: 70px auto 0;
+  padding: 22px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  background: rgba(0, 0, 0, 0.94);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 22px;
+}
+
+.lightbox[hidden] { display: none; }
+
+.lightbox img {
+  max-width: min(1100px, 94vw);
+  max-height: 82vh;
+  object-fit: contain;
+}
+
+.lightbox p { margin-top: 14px; color: var(--muted); letter-spacing: 0.05em; }
+
+.lightbox-close {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: var(--text);
+  font-size: 38px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+@media (max-width: 560px) {
+  .site-head nav a { margin-left: 12px; font-size: 13px; }
+  .grid { grid-template-columns: 1fr; }
+}
