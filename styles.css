@@ -229,3 +229,7 @@ footer {
   .site-head nav a { margin-left: 12px; font-size: 13px; }
   .grid { grid-template-columns: 1fr; }
 }
+
+/* Fix pack: visible keyboard focus; picture wrappers behave like the imgs they wrap */
+:focus-visible { outline: 2px solid var(--text); outline-offset: 3px; }
+.grid picture { display: block; }
