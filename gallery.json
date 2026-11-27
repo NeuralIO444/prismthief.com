@@ -1,0 +1,52 @@
+{
+  "photos": [
+    {
+      "slug": "concrete-geometry",
+      "title": "Concrete Geometry"
+    },
+    {
+      "slug": "waiting-on-the-arrow",
+      "title": "Waiting on the Arrow"
+    },
+    {
+      "slug": "friday-6pm",
+      "title": "Friday, 6PM"
+    },
+    {
+      "slug": "tip-of-the-cap",
+      "title": "Tip of the Cap"
+    },
+    {
+      "slug": "mid-stride",
+      "title": "Mid-Stride"
+    },
+    {
+      "slug": "lunch-break",
+      "title": "Lunch Break"
+    },
+    {
+      "slug": "slow-lane",
+      "title": "Slow Lane"
+    },
+    {
+      "slug": "one-way",
+      "title": "One Way"
+    },
+    {
+      "slug": "face-value",
+      "title": "Face Value"
+    },
+    {
+      "slug": "last-call",
+      "title": "Last Call"
+    },
+    {
+      "slug": "underpass",
+      "title": "Underpass"
+    },
+    {
+      "slug": "closed-for-the-evening",
+      "title": "Closed for the Evening"
+    }
+  ]
+}

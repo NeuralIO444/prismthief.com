@@ -248,3 +248,4 @@ footer {
 .strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 30px; }
 .strip picture { display: block; }
 .strip img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; display: block; }
+.grid figcaption small { display: block; margin-top: 2px; font-size: 11px; opacity: 0.75; letter-spacing: 0.03em; }
