@@ -2,51 +2,63 @@
   "photos": [
     {
       "slug": "concrete-geometry",
-      "title": "Concrete Geometry"
+      "title": "Concrete Geometry",
+      "added": "2026-11-26"
     },
     {
       "slug": "waiting-on-the-arrow",
-      "title": "Waiting on the Arrow"
+      "title": "Waiting on the Arrow",
+      "added": "2026-11-26"
     },
     {
       "slug": "friday-6pm",
-      "title": "Friday, 6PM"
+      "title": "Friday, 6PM",
+      "added": "2026-11-26"
     },
     {
       "slug": "tip-of-the-cap",
-      "title": "Tip of the Cap"
+      "title": "Tip of the Cap",
+      "added": "2026-11-26"
     },
     {
       "slug": "mid-stride",
-      "title": "Mid-Stride"
+      "title": "Mid-Stride",
+      "added": "2026-11-26"
     },
     {
       "slug": "lunch-break",
-      "title": "Lunch Break"
+      "title": "Lunch Break",
+      "added": "2026-11-26"
     },
     {
       "slug": "slow-lane",
-      "title": "Slow Lane"
+      "title": "Slow Lane",
+      "added": "2026-11-26"
     },
     {
       "slug": "one-way",
-      "title": "One Way"
+      "title": "One Way",
+      "added": "2026-11-26"
     },
     {
       "slug": "face-value",
-      "title": "Face Value"
+      "title": "Face Value",
+      "added": "2026-11-26"
     },
     {
       "slug": "last-call",
-      "title": "Last Call"
+      "title": "Last Call",
+      "added": "2026-11-26"
     },
     {
       "slug": "underpass",
-      "title": "Underpass"
+      "title": "Underpass",
+      "added": "2026-11-26"
     },
     {
       "slug": "closed-for-the-evening",
-      "title": "Closed for the Evening"
+      "title": "Closed for the Evening",
+      "added": "2026-11-26"
     }
   ]
 }

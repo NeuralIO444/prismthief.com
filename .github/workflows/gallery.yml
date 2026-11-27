@@ -21,6 +21,8 @@ jobs:
           python-version: "3.12"
       - run: pip install Pillow
       - run: python tools/build_gallery.py
+      - name: Quality gate (a failed check means nothing is committed)
+        run: python tools/check_site.py
       - name: Commit rebuilt gallery
         run: |
           git config user.name "github-actions[bot]"
