@@ -233,3 +233,18 @@ footer {
 /* Fix pack: visible keyboard focus; picture wrappers behave like the imgs they wrap */
 :focus-visible { outline: 2px solid var(--text); outline-offset: 3px; }
 .grid picture { display: block; }
+
+/* Prints page */
+.prices { width: 100%; border-collapse: collapse; margin: 20px 0 10px; }
+.prices th, .prices td { text-align: left; padding: 12px 10px; border-bottom: 1px solid var(--line); }
+.prices th { color: var(--muted); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; }
+.prices td.price { text-align: right; font-variant-numeric: tabular-nums; }
+.fineprint { color: var(--muted); font-size: 14px; line-height: 1.6; margin-top: 14px; }
+.subhead { margin: 34px 0 12px; font-size: 18px; letter-spacing: 0.04em; }
+.steps { margin: 0 0 22px 20px; line-height: 1.7; color: var(--text); }
+.steps li { margin-bottom: 8px; }
+.order-btn { display: inline-block; padding: 12px 22px; border: 1px solid var(--text); border-radius: 999px; color: var(--text); text-decoration: none; letter-spacing: 0.04em; }
+.order-btn:hover { background: var(--text); color: var(--bg); }
+.strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 30px; }
+.strip picture { display: block; }
+.strip img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; display: block; }
